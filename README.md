@@ -9,11 +9,11 @@
 
 # 📱 Preview
 ![](https://velog.velcdn.com/images/jeunghun2/post/.2e5646d3-"4c66-4363-9624-8c076bfc74e6/image.PNG)
-<img src="https://velog.velcdn.com/images/jeunghun2/post/2e5646d3-4c66-4363-9624-8c076bfc74e6/image.PNG" style="width:50%; height: 50%;">
+<img src="https://velog.velcdn.com/images/jeunghun2/post/004fc875-54d6-4768-bfc5-647141e92950/image.PNG" style="width:40%; height: 40%;">
 
 
 # Language & Library & Framework
-- C++
+- OpenCV
 - Objective-C++
 - Objective-C
 - Swift
