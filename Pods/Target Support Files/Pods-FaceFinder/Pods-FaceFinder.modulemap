@@ -1,0 +1,6 @@
+framework module Pods_FaceFinder {
+  umbrella header "Pods-FaceFinder-umbrella.h"
+
+  export *
+  module * { export * }
+}
