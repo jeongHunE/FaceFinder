@@ -49,13 +49,16 @@ using namespace cv;
     classifier.load([cascadePath UTF8String]);    //cascasePath를 UTF8로 인코딩하여 가져옴
     
     vector<cv::Rect> faceDetections;    //검출한 객체를 저장할 vector
-    const double scaleFactor = 1.2;    //영상 축소 비율
-    const int minNeighbors = 4;    //최종 얼굴로 인식하기 위해 필요한 이웃 수
+    const double scaleFactor = 1.1;    //영상 축소 비율
+    const int minNeighbors = 2;    //최종 얼굴로 인식하기 위해 필요한 이웃 수
+    const cv::Size minimumSize(300, 300);    //최소 객체 사이즈
     
     classifier.detectMultiScale(grayMat,
                                 faceDetections,
                                 scaleFactor,
-                                minNeighbors);
+                                minNeighbors,
+                                0,
+                                minimumSize);
     
     if (faceDetections.size() < 1) {
         return image;
